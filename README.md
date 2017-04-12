@@ -1,12 +1,3 @@
-[Betasmartz](http://betasmartz.com)
-
-
-## Docker Development Environment Setup
-Please follow the quick readme instructions for https://bitbucket.org/betasmartz/betasmartz_dev_setup
-
-Which will setup both the backend (this repository) and frontend, build docker containers, setup postgres dev database and run everything including nginx proxy between backend and frontend.
-
-
 ## Installation
 Ubuntu non-docker install instructions
 
@@ -66,26 +57,10 @@ python manage.py migrate main
 python manage.py migrate
 ```
 
-
-## Dev Site
-https://dev.betasmartz.com/
-https://dev.betasmartz.com/docs
-
-**credentials (username/pass):**
-firm: legal@example.org/123
-advisor: advisor@example.org/123  
-client: obama@demo.org/123
-
 ## Unit tests
 ```
 python3.5 manage.py test -v3 --settings=tests.test_settings
 ```
-
-## Models
-![models](devop/models.png)
-
-To update the models view:  
-`./manage.py graph_models -o devop/models.png main advisors portfolios`
 
 
 
